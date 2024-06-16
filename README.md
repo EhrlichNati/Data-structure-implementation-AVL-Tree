@@ -6,17 +6,14 @@ This project implements an AVL tree, a self-balancing binary search tree, in Pyt
 
 ## Contributors
 
-- **Username**: sheerofer
 - **Username**: EhrlichNati
-
-
+- **Username**: sheerofer
 
 ## Table of Contents
 
 1. [AVLNode Class](#avlnode-class)
    - [Constructor](#constructor)
-   - [Getters](#getters)
-   - [Setters](#setters)
+   - [Getters and Setters](#getters-and-setters)
    - [Utility Methods](#utility-methods)
 2. [AVLTree Class](#avltree-class)
    - [Constructor](#constructor-1)
@@ -41,56 +38,3 @@ class AVLNode(object):
         self.balance_factor = None
         self.height = -1
         self.size = 0
-
-### Getters
-
-def get_key(self):
-    return self.key if self.is_real_node() else None
-
-def get_value(self):
-    return self.value if self.is_real_node() else None
-
-def get_left(self):
-    return self.left if self.is_real_node() else None
-
-def get_right(self):
-    return self.right if self.is_real_node() else None
-
-def get_parent(self):
-    return self.parent if self.parent.is_real_node() else None
-
-def get_height(self):
-    return self.height if self.is_real_node() else -1
-
-def get_size(self):
-    return self.size if self.is_real_node() else 0
-
-
-### Setters
-
-def set_key(self, key):
-    self.key = key
-
-def set_value(self, value):
-    self.value = value
-
-def set_left(self, node):
-    self.left = node
-
-def set_right(self, node):
-    self.right = node
-
-def set_parent(self, node):
-    self.parent = node
-
-def set_height(self, h):
-    self.height = h
-
-def set_size(self, s):
-    self.size = s
-
-def set_bf(self):
-    left_height = self.left.height if self.is_real_node() else 0
-    right_height = self.right.height if self.is_real_node() else 0
-    self.balance_factor = left_height - right_height
-
