@@ -25,7 +25,7 @@ This project implements an AVL tree, a self-balancing binary search tree, in Pyt
 
 A class representing a node in an AVL tree.
 
-### Constructor
+### Layout
 
 ```python
 class AVLNode(object):
@@ -38,3 +38,69 @@ class AVLNode(object):
         self.balance_factor = None
         self.height = -1
         self.size = 0
+
+
+________________________________________________________________________________
+
+def search(self, key):
+
+def insert(self, key, val):
+    
+def delete(self, node):
+    
+def avl_to_array(self):
+   
+def size(self):
+
+
+______________________________________________________________________________
+def get_key(self):
+    return self.key if self.is_real_node() else None
+
+def get_value(self):
+    return self.value if self.is_real_node() else None
+
+def get_left(self):
+    return self.left if self.is_real_node() else None
+
+def get_right(self):
+    return self.right if self.is_real_node() else None
+
+def get_parent(self):
+    return self.parent if self.parent.is_real_node() else None
+
+def get_height(self):
+    return self.height if self.is_real_node() else -1
+
+def get_size(self):
+    return self.size if self.is_real_node() else 0
+
+________________________________________________________________________________
+
+def set_key(self, key):
+    self.key = key
+
+def set_value(self, value):
+    self.value = value
+
+def set_left(self, node):
+    self.left = node
+
+def set_right(self, node):
+    self.right = node
+
+def set_parent(self, node):
+    self.parent = node
+
+def set_height(self, h):
+    self.height = h
+
+def set_size(self, s):
+    self.size = s
+
+
+   
+
+
+
+
